@@ -3,6 +3,7 @@ import { classNames } from '../lib/compose';
 
 interface ChildrenProp {
 	children?: React.ReactNode | React.ReactNode[];
+	className?: string;
 }
 
 export const Table = ({ children }: ChildrenProp) => (
@@ -38,8 +39,8 @@ Table.Header = ({ children }: ChildrenProp) => (
 )
 
 
-Table.Row = ({ children }: ChildrenProp) => (
-	<tr className="odd:bg-zinc-50">
+Table.Row = ({ children, className }: ChildrenProp) => (
+	<tr className={classNames("odd:bg-zinc-50", className)}>
 		{children}
 	</tr>
 )

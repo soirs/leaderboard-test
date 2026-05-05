@@ -83,6 +83,15 @@ module.exports = {
 			maxHeight: {
 				...spacing
 			},
+			keyframes: {
+				fadeBg: {
+					'0%': { backgroundColor: '#bbf7d0' }, // green-200
+					'100%': { backgroundColor: 'transparent' },
+				},
+			},
+			animation: {
+				fadeBg: 'fadeBg 3s ease-out forwards',
+			},
 			fontSize: {
 				mini: ['7px', { lineHeight: '10px' }],
 				tiny: ['8px', { lineHeight: '10px' }],

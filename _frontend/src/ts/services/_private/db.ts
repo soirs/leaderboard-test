@@ -1,12 +1,12 @@
 // this contains the mock backend db, and should not be referenced
 
-interface User {
+export interface User {
 	type: 'user';
 	id: number;
 	name: string;
 }
 
-interface Product {
+export interface Product {
 	type: 'product';
 	id: number;
 	name: string;
